@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="/">
+        <div class="input-fields">
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <span class="close"></span>
+            </div>
+            <div class="input-field">
+                <label for="confirm-password">Confirm your password</label>
+                <input type="password" id="confirm-password">
+                <span class="close"></span>
+            </div>
+            <div class="validation">
+                <div class="validation-content">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <p>Your password is: <span class="password-power close">very weak</span></p>
+                    <div class="requriement">
+                        <p>Your password should have:</p>
+                        <ul>
+                            <li class="words close"><span class="material-icons md-15 ">close</span>At least three alphanumerical letters</li>
+                            <li class="number close"><span class="material-icons md-15 ">close</span>At least one number</li>
+                            <li class="upper_case close"><span class="material-icons md-15 ">close</span>At least one uppercase letter</li>
+                            <li class="lower_case close"><span class="material-icons md-15 ">close</span>At least one lowercase letter</li>
+                            <li class="special close"><span class="material-icons md-15 ">close</span>At least one special symbol</li>
+                            <li class="limit close"><span class="material-icons md-15 ">close</span>At least 8 characters</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-footer">
+            <p class="submit-message"></p>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
